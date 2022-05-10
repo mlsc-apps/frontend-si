@@ -42,18 +42,18 @@ app.get('/', function(req, res) {
 
 There are three types of renderers which will be resolved in following order:
 
-1. Local renderers. Framework will try to resolve local renderers as first. Framework will look into special folder `renderers` and then inside render name folder for a special file called `render.js` for rendering instructions.
+1. Local renderers. Framework will try to resolve local renderers as first. Framework will look into special folder `renderers` in the root directory and then inside folder with renderer name and then it will look for a special file called `render.js` for rendering instructions.
 
     For example renderer with name list-1.0 will be resolved for instructions under:
     `./renderers/list-1.0/render.js`
 
-    Example:
+    Example usage in template file:
 
     `list-1.0@->listData`
 
 2. Remote renderers. If not resolved locally framework will check for `https://` in the name of renderer to assume this is remote renderer. Framework will download the content of remote renderer and cache it inside `renderer` folders giving it a name based on URL. Next time it will be resolved locally. Feel free to change it locally if required if you want to pull remote file again just delete the folder with remote renderer.
 
-    Example:
+    Example usage in template file:
 
     `https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/list-1.0/render.js@->listData`
 

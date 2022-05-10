@@ -57,9 +57,9 @@ There are three types of renderers which will be resolved in following order:
 
     https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/list-1.0/render.js@->listData
 
-    ```
+
     :warning: WARNING: Make sure to review the renderer first before using in your templates. There is enough dishonest actors to try to make damage and in the end you are executing someone else code.
-    ```
+
 
 3. Built-in renderers. If not resolved locally and remotely framework will fall back to built-in renderers. This means if you are not happy with default behaviour of built-in renderers write your own local one and this will override the built-in behaviour.
 

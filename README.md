@@ -7,7 +7,7 @@ which will execute defined renderer after passing input data to it.
 
 ## Hello World (with nodejs/express)
 
-1. Create template file 'hello.si' with following content
+1. Create template file `hello.si` with following content
 
 ```
 html
@@ -44,20 +44,20 @@ There are three types of renderers which will be resolved in following order:
 
 1. Local renderers. Framework will try to resolve local renderers as first. Framework will look into special folder `renderers` and then inside render name folder for a special file called `render.js` for rendering instructions.
 
-For example renderer with name list-1.0 will be resolved for instructions under:
-`./renderers/list-1.0/render.js`
+    For example renderer with name list-1.0 will be resolved for instructions under:
+    `./renderers/list-1.0/render.js`
 
-Example:
+    Example:
 
-`list-1.0@->listData`
+    `list-1.0@->listData`
 
 2. Remote renderers. If not resolved locally framework will check for `https://` in the name of renderer to assume this is remote renderer. Framework will download the content of remote renderer and cache it inside `renderer` folders giving it a name based on URL. Next time it will be resolved locally. Feel free to change it locally if required if you want to pull remote file again just delete the folder with remote renderer.
 
-Example:
+    Example:
 
-https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/list-1.0/render.js@->listData
+    https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/list-1.0/render.js@->listData
 
-WARNING:
+    WARNING:
 
 3. Built-in renderers. If not resolved locally and remotely framework will fall back to built-in renderers. This means if you are not happy with default behaviour of built-in renderers write your own local one and this will override the built-in behaviour.
 
@@ -72,7 +72,7 @@ There is a working nodejs/express example here: https://github.com/mlsc-apps/fro
 
 ## Css
 
-You can pass css information same as any other data. Good practise would be to add css parameter inside data object for all style related information. If you pass a style to render to use make sure to add a css link in the header section of the template where the css class is defined.
+You can pass css information same as any other data. Good practice would be to add css parameter inside data object for all style related information. If you pass a style to render to use make sure to add a css link in the header section of the template where the css class is defined.
 
 ## Writing your own renderer
 
@@ -84,7 +84,7 @@ You can pass css information same as any other data. Good practise would be to a
     |-> myFirstRenderer
 ```
 
-2. Create a special file inside newly created folder called `render.js`
+2. Create a special file inside `renderers` folder called `render.js`
 
 ```
 .

@@ -33,9 +33,9 @@ app.get('/', function(req, res) {
 ```
 
 3. This will return following rendered html file:
-    ```
-    <html><head></head><body><div>Hello World!</div></body></html>
-    ```
+```
+<html><head></head><body><div>Hello World!</div></body></html>
+```
 
 
 ## Renderers

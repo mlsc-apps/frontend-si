@@ -70,8 +70,6 @@ Of course the biggest power of the framework lies in remote renderers since they
 You would use them by pointing to the raw version of the file for example:
 `https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/table-1.0/render.js@->myOwnTableData`
 
-There is a working nodejs/express example here: https://github.com/mlsc-apps/frontend-si-example
-
 ## Css
 
 You can pass css information same as any other data. Good practice would be to add css parameter inside data object for all style related information. If you pass a style to render to use make sure to add a css link in the header section of the template where the css class is defined.
@@ -116,4 +114,6 @@ Framework will execute methods `beginRender` and `endRender` accordingly. Data r
 
     `MyFirstRenderer@->data`
 
+## Example project
 
+There is a working nodejs/express example here: https://github.com/mlsc-apps/frontend-si-example

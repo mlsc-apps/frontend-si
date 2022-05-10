@@ -20,10 +20,10 @@
   ],
   "author": "Marek Lasota <marek.lasota@mlsc.pl>",
   "license": "MIT",
-  "repository": "github.",
-  "homepage": "https://github.com/.../...#readme",
+  "repository": "https://github.com/mlsc-apps/frontend-si",
+  "homepage": "https://github.com/mlsc-apps/frontend-si#README.md",
   "bugs": {
-		"url": "https://github.com/.../issues"
+		"url": "https://github.com/mlsc-apps/frontend-si/issues"
 	},
   "engines": {
     "node": ">= 0.10.0"

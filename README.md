@@ -9,10 +9,12 @@ which will execute defined renderer after passing input data to it.
 
 1. Create template file 'hello.si' with following content
 
-`html
+```
+html
     head
     body
-        div@->message`
+        div@->message
+```
 
 `html`, `head`, `body` are built-in renderers with no data passed to them. `Div` is a built-in renderer to which we will pass data object called message.
 

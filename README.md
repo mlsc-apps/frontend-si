@@ -55,7 +55,7 @@ There are three types of renderers which will be resolved in following order:
 
     Example:
 
-    https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/list-1.0/render.js@->listData
+    `https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/list-1.0/render.js@->listData`
 
 
     :warning: **WARNING**: Make sure to review the renderer first before using in your templates. There is enough dishonest actors to try to make damage and in the end you are executing someone else code.:warning:
@@ -68,7 +68,7 @@ There are three types of renderers which will be resolved in following order:
 Of course the biggest power of the framework lies in remote renderers since they can be written by experts and shared. There are couple of simplest, ready-to-go remote renderers to experiment with: https://github.com/mlsc-apps/si-renderers.
 
 You would use them by pointing to the raw version of the file for example:
-https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/table-1.0/render.js@->myOwnTableData
+`https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/table-1.0/render.js@->myOwnTableData`
 
 There is a working nodejs/express example here: https://github.com/mlsc-apps/frontend-si-example
 

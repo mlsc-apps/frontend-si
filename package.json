@@ -18,7 +18,7 @@
     "http",
     "rest"
   ],
-  "author": "Marek Lasota <marek.lasota@mlsc.pl>",
+  "author": "marek.lasota@mlsc.pl",
   "license": "MIT",
   "repository": "https://github.com/mlsc-apps/frontend-si",
   "homepage": "https://github.com/mlsc-apps/frontend-si#README.md",

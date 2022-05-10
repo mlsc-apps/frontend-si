@@ -63,6 +63,10 @@ https://raw.githubusercontent.com/mlsc-apps/si-renderers/master/table-1.0/render
 
 There is a working nodejs/express example here: https://github.com/mlsc-apps/frontend-si-example
 
+Css
+
+You can pass css information same as any other data. Good practise would be to add css parameter inside data object for all style related information. If you pass a style to render to use make sure to add a css link in the header section of the template where the css class is defined.
+
 Writing your own renderer
 
 1. Create a folder with renderer name under special folder renderers.

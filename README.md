@@ -16,7 +16,7 @@ html
         div@->message
 ```
 
-`html`, `head`, `body` are built-in renderers with no data passed to them. `Div` is a built-in renderer to which we will pass data object called message.
+`html`, `head`, `body` are built-in renderers with no data passed to them. `div` is a built-in renderer to which we will pass data object called message.
 
 2. Make sure to import frontend-si module and in your express app file
 
@@ -24,14 +24,18 @@ html
 
 and add following line to handle request at root:
 
-`app.get('/', function(req, res) {
+```
+app.get('/', function(req, res) {
     Si.renderHTML('./hello.si', { message : "Hello World!" }, (html) => {
         res.status(200).send(html);
     });
-});`
+});
+```
 
 3. This will return following rendered html file:
+    ```
     <html><head></head><body><div>Hello World!</div></body></html>
+    ```
 
 
 ## Renderers
@@ -45,7 +49,7 @@ For example renderer with name list-1.0 will be resolved for instructions under:
 
 Example:
 
-list-1.0@->listData
+`list-1.0@->listData`
 
 2. Remote renderers. If not resolved locally framework will check for `https://` in the name of renderer to assume this is remote renderer. Framework will download the content of remote renderer and cache it inside `renderer` folders giving it a name based on URL. Next time it will be resolved locally. Feel free to change it locally if required if you want to pull remote file again just delete the folder with remote renderer.
 
@@ -74,20 +78,25 @@ You can pass css information same as any other data. Good practise would be to a
 
 1. Create a folder with renderer name under special folder `renderers`.
 
-`.
+```
+.
 |-> renderers
-    |-> myFirstRenderer`
+    |-> myFirstRenderer
+```
 
 2. Create a special file inside newly created folder called `render.js`
 
-```.
+```
+.
 |-> renderers
     |-> myFirstRenderer
-        |-> render.js```
+        |-> render.js
+```
 
 3. Implement render specification in the file `render.js` as follows (class name does not matter)
 
-```class MyFirstRenderer {
+```
+class MyFirstRenderer {
     
     beginRender(data) {
         return '';
@@ -96,12 +105,13 @@ You can pass css information same as any other data. Good practise would be to a
     endRender(data) {
         return '';
     }
-}```
+}
+```
 
 Framework will execute methods `beginRender` and `endRender` accordingly. Data required to generate html will be provided in data object.
 
 4. Once implemented you can use new renderer inside your templates:
 
-MyFirstRenderer@->data
+`MyFirstRenderer@->data`
 
 

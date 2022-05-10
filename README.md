@@ -9,10 +9,10 @@ which will execute defined renderer after passing input data to it.
 
 1. Create template file 'hello.si' with following content
 
-html
+`html
     head
     body
-        div@->message
+        div@->message`
 
 `html`, `head`, `body` are built-in renderers with no data passed to them. `Div` is a built-in renderer to which we will pass data object called message.
 
@@ -72,16 +72,16 @@ You can pass css information same as any other data. Good practise would be to a
 
 1. Create a folder with renderer name under special folder `renderers`.
 
-.
+`.
 |-> renderers
-    |-> myFirstRenderer
+    |-> myFirstRenderer`
 
 2. Create a special file inside newly created folder called `render.js`
 
-.
+`.
 |-> renderers
     |-> myFirstRenderer
-        |-> render.js
+        |-> render.js`
 
 3. Implement render specification in the file `render.js` as follows (class name does not matter)
 

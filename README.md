@@ -78,14 +78,14 @@ You can pass css information same as any other data. Good practise would be to a
 
 2. Create a special file inside newly created folder called `render.js`
 
-`.
+```.
 |-> renderers
     |-> myFirstRenderer
-        |-> render.js`
+        |-> render.js```
 
 3. Implement render specification in the file `render.js` as follows (class name does not matter)
 
-`class MyFirstRenderer {
+```class MyFirstRenderer {
     
     beginRender(data) {
         return '';
@@ -94,7 +94,7 @@ You can pass css information same as any other data. Good practise would be to a
     endRender(data) {
         return '';
     }
-}`
+}```
 
 Framework will execute methods `beginRender` and `endRender` accordingly. Data required to generate html will be provided in data object.
 

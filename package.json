@@ -1,0 +1,38 @@
+{
+  "name": "frontend-si",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Fast, lightweight and minimalist frontend framework",
+  "main": "si.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "si",
+    "frontend",
+    "express",
+    "framework",
+    "web",
+    "html",
+    "web page",
+    "http",
+    "rest"
+  ],
+  "author": "Marek Lasota <marek.lasota@mlsc.pl>",
+  "license": "MIT",
+  "repository": "github.",
+  "homepage": "https://github.com/.../...#readme",
+  "bugs": {
+		"url": "https://github.com/.../issues"
+	},
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "files": [
+    "Readme.md",
+    "si.js",
+    "lib/"
+  ],
+  "dependencies": {
+  }
+}

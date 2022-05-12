@@ -1,5 +1,5 @@
 
-frontend-si is fast, lightweight and minimalist frontend framework based on model view concept separating rendering from the data. Every line in template file will follow the same pattern:
+frontend-si is fast, lightweight and minimalist frontend framework based on model view controller concept separating rendering from the data. Every line in template file will follow the same pattern:
 
 *renderer*\[@->*data*\]
 

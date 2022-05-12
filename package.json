@@ -1,7 +1,7 @@
 {
   "name": "frontend-si",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast, lightweight and minimalist frontend framework",
   "main": "si.js",
   "scripts": {
@@ -23,8 +23,8 @@
   "repository": "https://github.com/mlsc-apps/frontend-si",
   "homepage": "https://github.com/mlsc-apps/frontend-si#README.md",
   "bugs": {
-		"url": "https://github.com/mlsc-apps/frontend-si/issues"
-	},
+    "url": "https://github.com/mlsc-apps/frontend-si/issues"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -33,6 +33,5 @@
     "si.js",
     "lib/"
   ],
-  "dependencies": {
-  }
+  "dependencies": {}
 }
